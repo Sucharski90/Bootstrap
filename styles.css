@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#simpleModal, .modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header {
+    height: 5rem;
+    color: #2e3239;
+    
+}
+
+.container {
+    padding-top: 2rem;
+}
+.hero {
+    background-image: url("Images/boat-dusk.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    color: white;
+}
+.hero__text {
+    position: relative;
+    top: 50%;
+    padding-left: 5rem;
+}
+.about {
+    padding-top: 10rem;
+    padding-left: 7%;
+    color: #3f434c;
+}
+.three__grid {
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+.dark__section {
+    background-color: #2d3e4e;
+    height: 40rem;
+    display: flex;
+}
+.dark__image {
+    background-image: url("Images/boat.jpg");
+    height:80%;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+}
+.dark__section__text {
+    padding-left: 10%;
+    align-self: center;
+}
+.dark__text, .align-right, .icons, .try__btn {
+    color: white;
+    flex-direction: column;
+    align-self: center;
+}
+.list__style {
+    list-style: none;
+}
+.form-control {
+    height: 25%;
+}
+.footer {
+    color: #3e434d;
+}
+@media screen and (max-width:768px) {
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .dark__image {
+        height: 80%;
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .footer {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center; */
+        /* display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto; */
+    }
+    
+}

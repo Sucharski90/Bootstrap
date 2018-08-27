@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="./reset.css">
+ <link rel="stylesheet" href="./styles.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+ <title>Bootstrap</title>
+ 
+</head>
+<body>
+ <!-- header nav -->
+ <header class="header container-fluid">
+  <div class="container-fluid">
+   <div class="row justify-content-end">
+    
+   
+    <ul class="nav">
+     <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Work</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Blog</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+     </li>
+    </ul>
+    <button class="btn btn-success align-items-center" type="button">SIGN IN</button>
+   </div>
+  </div>
+ </header>
+ <!-- end header nav -->
+
+ <!-- hero image -->
+ <div class="hero container-fluid">
+     <div class="hero__text">
+  <h1>We've created the product that will help your <br> startup to look even better</h1>
+  <h3>You have the design, you have the code</h3>
+</div>
+ </div>
+ <!-- end hero image -->
+
+ <!-- about -->
+ <div class="about">
+  <h2>We've created the product that will <br> help your startup to look even better</h2>
+  <p>Startup Design Framework contains components and complex <br> blocks which can easily be intergrated into almost any design.<br>
+   Responsive layout, lear grid, retina ready</p>
+ </div>
+ <!-- end about -->
+
+ <!-- 3 grid section -->
+ <div class="three__grid container-fluid row text-left center d-flex justify-content-around">
+  <div class="high__res col-3">
+   <h4>High Resolution</h4>
+   <p>We did a 2.5K size high resolution photo that will suit even for a very large site.</p>
+  </div>
+  <div class="easy__to__use col-3">
+   <h4>Easy To Use</h4>
+   <p>To get started, you select the desired sample and base the entire website on it. It's that simple!</p>
+  </div>
+  <div class="feel__our__design col-3">
+   <h4>Feel our design</h4>
+   <p>Samples will show you the feeling on how to play around using the components.</p>
+  </div>
+ </div>
+ <!-- end 3 grid section -->
+
+
+ <!-- dark image section -->
+ <div class="dark__section">
+     <div class="dark__image"></div>
+     <div class="dark__section__text">
+<div class="dark__text align-right">
+  <div class="icons">
+   <i class="fab fa-facebook fa-fw"></i>
+   <i class="fab fa-facebook fa-fw"></i>
+   <i class="fab fa-facebook fa-fw"></i>
+  </div>
+  <div class="dark__text">
+   <h4>Multi useful components</h4>
+   <p>Startup Design Framework contains components and <br> complex blocks which can easily be integrated into <br> almost any design.
+    All of these components are made in <br> the same style.</p>
+  </div>
+  <div class="try__btn">
+   <button class="btn btn-default border-success" id="modal__btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">TRY IT NOW</button>
+</div>
+</div>
+  </div>
+ 
+</div>
+ <!-- end dark image section -->
+
+
+ <!-- footer -->
+ <div class="footer container">
+    <div class="row">   
+     <h1 class="col-sm">Startup</h1>
+        <ul class="col-sm list__style"><h3>About</h3>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Team</li>
+            <li>Career</li>
+            <li>Contact</li>
+        </ul>
+        <ul class="col-sm  list__style"><h3>Work</h3>
+            <li>Our Portfolio</li>
+            <li>Latest Work</li>
+            <li>Brands</li>
+        </ul>
+        <ul class="col-sm list__style"><h3>Stuff</h3>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Advertie</li>
+        </ul>
+
+        <div class="input-group col-sm">
+                <div class="input-group-prepend">
+                </div>
+                <input type="text" class="form-control" placeholder="E-mail"  aria-describedby="btnGroupAddon">
+                <div class="input-group-text form-control" id="btnGroupAddon">></div>
+              </div>
+            </div>
+        </div>
+ </div>
+
+ <!-- end footer -->
+ <!-- modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input  class="form-control" id="name__input" placeholder="Name" >
+                                    <span class="form__input name__error"></span>
+
+
+                            <div class="form-group">
+                              <label for="email">Email address</label>
+                              <input  class="form-control" id="email__user" placeholder="Enter email" >
+                              <span class="form__input email__error"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Phone Number</label>
+                              <input class="form-control" id="phone__user" placeholder="Phone Number" name="phone" >
+                              <span class="form__input phone__error"></span>
+                            </div>
+
+
+                            <button  class="btn btn-primary">Submit</button>
+                           </form>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!-- end modal -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+ <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+ crossorigin="anonymous"></script>
+ <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
